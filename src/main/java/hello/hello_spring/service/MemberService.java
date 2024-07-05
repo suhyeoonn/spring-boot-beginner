@@ -10,7 +10,11 @@ import java.util.Optional;
 // 서비스 클래스는 비지니스에 가까운 용어를 써야 한다.
 
 public class MemberService {
-    private final MemberRepository memberRepository = new MemoryMemberRepository();
+    private final MemberRepository memberRepository;
+
+    public MemberService(MemberRepository memberRepository) {
+        this.memberRepository = memberRepository;
+    }
 
     public Long join(Member member) {
         // 같은 이름 중복 X
