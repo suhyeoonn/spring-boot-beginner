@@ -11,11 +11,11 @@ import java.util.Optional;
 
 // 서비스 클래스는 비지니스에 가까운 용어를 써야 한다.
 
-@Service
+//@Service
 public class MemberService {
     private final MemberRepository memberRepository;
 
-    @Autowired
+//    @Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
