@@ -14,6 +14,7 @@ public class SpringConfig {
     }
 
     @Bean
+    // 나중에 DB가 정해지면 여기만 변경하면 되는 이점이 있음
     public MemberRepository memberRepository() {
         return new MemoryMemberRepository();
     }
